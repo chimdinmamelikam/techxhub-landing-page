@@ -169,8 +169,8 @@ This project is open source and available under the [MIT License](LICENSE).
 **Chimdinma Melikam**
 
 - Portfolio: [chimdinmamelikam.vercel.app](https://chimdinmamelikam.vercel.app)
-- GitHub: [@YOUR_GITHUB_USERNAME](https://github.com/YOUR_GITHUB_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
+- GitHub: [My GitHub](https://github.com/chimdinmamelikam)
+- LinkedIn: [My LinkedIn](https://linkedin.com/in/loismelikam)
 
 ## 🙏 Acknowledgments
 
