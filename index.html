@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechXHub - Premium Tech Gadgets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">TechXHub</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="cart-btn" onclick="alert('Cart functionality coming soon!')">
+            🛒 Cart
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ELEVATE YOUR DIGITAL EXPERIENCE</h1>
+            <p>Discover cutting-edge technology that transforms your digital lifestyle. Premium gadgets, unbeatable prices.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About TechXHub</h2>
+        <div class="about-content">
+            <p>Welcome to TechXHub, your premier destination for the latest and greatest in tech innovation. We curate a selection of cutting-edge gadgets designed to elevate your digital experience.</p>
+            <p>From smart devices to audio excellence, we bring you products that combine style, functionality, and the latest technology trends.</p>
+            
+            <div class="about-features">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Shipping</h3>
+                    <p>Express delivery worldwide</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Payment</h3>
+                    <p>100% protected transactions</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Premium Quality</h3>
+                    <p>Only the best tech products</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💎</div>
+                    <h3>Warranty</h3>
+                    <p>2-year comprehensive coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-badge">NEW</div>
+                <div class="product-image">🎧</div>
+                <div class="product-info">
+                    <h3 class="product-name">AirFlow Pro Max</h3>
+                    <p class="product-description">Premium wireless headphones with active noise cancellation and 40-hour battery life.</p>
+                    <div class="product-price">$299</div>
+                    <button class="add-to-cart" onclick="addToCart('AirFlow Pro Max', 299)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">HOT</div>
+                <div class="product-image">⌚</div>
+                <div class="product-info">
+                    <h3 class="product-name">SmartWatch X7</h3>
+                    <p class="product-description">Advanced fitness tracking, heart rate monitoring, and seamless smartphone integration.</p>
+                    <div class="product-price">$449</div>
+                    <button class="add-to-cart" onclick="addToCart('SmartWatch X7', 449)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">📱</div>
+                <div class="product-info">
+                    <h3 class="product-name">PowerBank Ultra</h3>
+                    <p class="product-description">50,000mAh capacity with fast charging for all your devices. Never run out of power.</p>
+                    <div class="product-price">$89</div>
+                    <button class="add-to-cart" onclick="addToCart('PowerBank Ultra', 89)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">SALE</div>
+                <div class="product-image">🎮</div>
+                <div class="product-info">
+                    <h3 class="product-name">GamePad Pro Elite</h3>
+                    <p class="product-description">Professional gaming controller with customizable buttons and RGB lighting.</p>
+                    <div class="product-price">$129</div>
+                    <button class="add-to-cart" onclick="addToCart('GamePad Pro Elite', 129)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">📷</div>
+                <div class="product-info">
+                    <h3 class="product-name">Mini Cam 4K</h3>
+                    <p class="product-description">Compact 4K action camera with waterproof housing and image stabilization.</p>
+                    <div class="product-price">$199</div>
+                    <button class="add-to-cart" onclick="addToCart('Mini Cam 4K', 199)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">NEW</div>
+                <div class="product-image">🔊</div>
+                <div class="product-info">
+                    <h3 class="product-name">SoundBlast Speaker</h3>
+                    <p class="product-description">360° surround sound with deep bass and 20-hour battery. Perfect for any occasion.</p>
+                    <div class="product-price">$179</div>
+                    <button class="add-to-cart" onclick="addToCart('SoundBlast Speaker', 179)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">SA</div>
+                    <div class="reviewer-info">
+                        <h4>Sarah Anderson</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"Absolutely love my AirFlow Pro Max! The sound quality is incredible and the noise cancellation is perfect for my daily commute. Best purchase this year!"</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">MJ</div>
+                    <div class="reviewer-info">
+                        <h4>Michael Johnson</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"The SmartWatch X7 has completely changed how I track my fitness. The integration with my phone is seamless and the battery lasts forever!"</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">EL</div>
+                    <div class="reviewer-info">
+                        <h4>Emily Lopez</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"TechXHub has the best customer service! Fast shipping, authentic products, and great prices. Highly recommend to all tech enthusiasts!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechXHub</h3>
+                <p>Your trusted source for premium tech gadgets and innovation.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Twitter">🐦</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#products">Products</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Returns</a>
+                <a href="#">Warranty</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 support@techxhub.com</p>
+                <p>📞 +2348064749685</p>
+                <p>📍 Abuja, Nigeria</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechXHub. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p style="margin-top: 0.5rem;">Built by <a href="https://chimdinmamelikam.vercel.app" target="_blank" style="color: #2563eb; font-weight: 600; text-decoration: none; display: inline;">Chimdinma Melikam</a></p>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-overlay" onclick="toggleCart()"></div>
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button class="close-cart" onclick="toggleCart()">✕</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-price" id="totalPrice">$0</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
